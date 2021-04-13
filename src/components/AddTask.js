@@ -44,7 +44,7 @@ export const AddTask = ({ onAdd }) => {
 
             <div className="form-control">
                 <label>Date</label>
-                <input type="text" value={date} onChange={(e) => setDate(e.target.value)} />
+                <input type="date" value={date} onChange={(e) => setDate(e.target.value)} />
                 <span className="dateError">{dateError ? "Date should no be empty" : ""}</span>
             </div>
             <div className="form-control">
