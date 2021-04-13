@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #ffcda3;
+  color: #444;
+}
+
+.container {
+  position: relative;
+  max-width: 300px;
+  background-color: rgb(246, 246, 246);
+  margin: 1rem auto;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+}
+
+.task {
+  background-color: #fff;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.reminder {
+  border-left: 3px solid #ee9595;
+}
+h6 {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 0.2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #74c7b8;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #ef4f4f;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 0.5em 1em;
+}
+.full-width {
+  display: block;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.add-btn {
+  cursor: pointer;
+  background-color: #ef4f4f;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 0.5em 1em;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.add-btn:hover {
+  background-color: #ca4646;
+}
+
+.form-control {
+  margin-bottom: 1rem;
+}
+input[type="text"] {
+  width: 100%;
+  border: 1px solid #74c7b8;
+  border-radius: 5px;
+  padding: 0.5em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.taskError,
+.dateError {
+  color: #ca4646;
+  font-size: 0.7rem;
+}
