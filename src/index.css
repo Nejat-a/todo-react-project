@@ -107,3 +107,9 @@ input[type="date"] {
   color: #ca4646;
   font-size: 0.7rem;
 }
+
+@media screen and (max-width: 300px) {
+  .container {
+    max-width: 250px;
+  }
+}

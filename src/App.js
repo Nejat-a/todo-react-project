@@ -3,10 +3,11 @@ import { Header } from './components/Header';
 import { Tasks } from './components/Tasks';
 import { useState } from 'react';
 import { AddTask } from './components/AddTask';
+import useLocalStorage from './hooks/useLocalStorage';
 
 function App() {
   const [showFrom, setShowFrom] = useState(false);
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useLocalStorage("tasks", []);
 
 
   //toggleReminder

@@ -2,16 +2,12 @@ import { useState } from 'react'
 import { Button } from './Button'
 import { Header } from './Header';
 
-
-
 export const AddTask = ({ onAdd }) => {
     const [title, setTitle] = useState("");
     const [date, setDate] = useState("");
     const [reminder, setReminder] = useState(false);
     const [taskError, setTaskError] = useState(false);
     const [dateError, setDateError] = useState(false);
-
-
 
     const submitForm = (e) => {
         e.preventDefault();
@@ -31,7 +27,6 @@ export const AddTask = ({ onAdd }) => {
         setReminder(false);
         setTaskError(false);
         setDateError(false);
-
     }
     return (
         <form onSubmit={submitForm}>
@@ -49,7 +44,7 @@ export const AddTask = ({ onAdd }) => {
             </div>
             <div className="form-control">
                 <label>Reminder </label>
-                <input type="checkbox" value={reminder} onChange={(e) => setReminder(e.currentTarget.checked)} />
+                <input type="checkbox" checked={reminder} value={reminder} onChange={(e) => setReminder(e.currentTarget.checked)} />
             </div>
             <Button text="Save task" style="btn full-width" />
         </form>
